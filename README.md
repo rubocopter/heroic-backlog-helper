@@ -4,8 +4,6 @@
 
 Un script de PowerShell para extraer tus listas de juegos de las cachés de Heroic Games Launcher (Epic Games, GOG, Amazon Games) y ayudarte a mantener un archivo de texto simple con tu backlog.
 
-![Ejemplo de Script en Ejecución](images/menu.png)
-
 ## ✨ Características Principales
 
 *   **Extracción Multi-Tienda:** Lee los archivos caché de Heroic para obtener listas de juegos de Epic, GOG y Amazon.
