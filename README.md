@@ -36,7 +36,7 @@ Un script de PowerShell para extraer tus listas de juegos de las cachés de Hero
     *   El script asume que el directorio de caché de Heroic está en: `C:\Users\<TuUsuario>\AppData\Roaming\heroic\store_cache`.
     *   **Si tu instalación de Heroic está en otro lugar,** abre el archivo `.ps1` con un editor de texto (como Notepad++, VS Code, o incluso Bloc de notas) y **modifica la línea:**
         ```powershell
-        $directorioHeroic = "C:\Users\onita\AppData\Roaming\heroic\store_cache" # Ajusta si es necesario
+        $directorioHeroic = "C:\Users\<TuUsuario>\AppData\Roaming\heroic\store_cache" # cambia con tu nombre de usuario o directorio
         ```
         Reemplaza la ruta con la correcta para tu sistema. Guarda el archivo.
 4.  **Crea tu Archivo de Backlog Inicial:**
@@ -64,7 +64,7 @@ Un script de PowerShell para extraer tus listas de juegos de las cachés de Hero
         Responde 'S' (Sí) si te pregunta. Luego, cierra la ventana de Administrador y abre una ventana normal de PowerShell para ejecutar el script. [Más info sobre ExecutionPolicy](https://go.microsoft.com/fwlink/?LinkID=135170).
 3.  **Usa el Menú:**
     *   El script te mostrará un menú con opciones:
-        ![Menú del Script](images/screenshot_script_menu.png) <!-- Reemplaza con tu captura -->
+        ![Menú del Script](images/menu.png)
     *   **Flujo Recomendado:**
         1.  **Opción 1 (`Generar lista completa`):** Ejecútala primero. Esto leerá los archivos `.json` de la caché de Heroic usando `jq` y creará/sobrescribirá `lista_juegos_completa.txt` con todos los juegos encontrados (formato: `NombreJuego<TAB>Tienda`).
         2.  **Opción 2 (`Comprobar nuevos juegos`):** Compara `lista_juegos_completa.txt` con tu `yaenbacklog.txt`. Si encuentra juegos en la lista completa que no están en tu backlog, los mostrará en pantalla y los guardará en `nuevos_juegos.txt`.
